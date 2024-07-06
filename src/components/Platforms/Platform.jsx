@@ -2,6 +2,7 @@ import React from 'react'
 import "./Platform.css"
 const Platform = () => {
   return (
+    <div id="platform">
     <div className="platPeakContainer">
       <div className="plathead">
         <h1>Skills</h1>
@@ -106,6 +107,7 @@ const Platform = () => {
           </ul>
         </div>
        
+      </div>
       </div>
       </div>
 

@@ -2,6 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
+    <div id="projects">
     <div className='projectsContainer'>
           <div className="projects">
             <a href="<Navar/>"> <div className="pro-1">dddddd</div></a>
@@ -12,7 +13,8 @@ const Projects = () => {
             <a href=''> <div className="pro-6"></div></a>
             <a href=''> <div className="pro-7"></div></a>
           </div>
-    </div>
+      </div>
+      </div>
   )
 }
 

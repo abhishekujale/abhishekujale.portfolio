@@ -10,6 +10,7 @@ import cp from "../../assets/cp.jpg"
 
 const Skills = () => {
   return (
+    <div id="skills">
     <div className="Special">
       <div className='mainContainer'>
           <div className="heading">
@@ -70,6 +71,7 @@ const Skills = () => {
               </div>
               </div>
           </div>
+      </div>
       </div>
       </div>
   )

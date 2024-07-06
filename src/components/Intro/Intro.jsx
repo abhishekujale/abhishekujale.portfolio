@@ -15,7 +15,7 @@ const Intro = () => {
                   Computer Science Student <br />
               </span>
               <p className="introPara"></p>
-              <a href='http://gmail.com' target='_blank'><button className="btn"><img src={hire} alt="" />Hire me</button></a>
+              <a href='https://mail.google.com/mail/u/0/#inbox?compose=new' target='_blank'><button className="btn"><img src={hire} alt="" />Hire me</button></a>
           </div>   
           <div className="imgeContent">
           <img src={imge} alt="" className='bg'/>

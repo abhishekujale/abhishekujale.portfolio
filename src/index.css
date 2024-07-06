@@ -5,3 +5,6 @@ body
     background-color: black;
     font-family: poppins;
 }
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
