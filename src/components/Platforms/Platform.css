@@ -1,0 +1,63 @@
+div
+{
+    color: #ffffff;
+}
+.platContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.platPeakContainer
+{
+    display: flex;
+justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.platcards
+{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: rgb(161, 215, 215);
+    padding: 20px;
+    width: 10rem;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.border
+{
+    width: 100vw;
+    height: 2px;
+background: linear-gradient(#ffffff,#000);    margin-bottom: 20px;
+}
+.platContaint
+{
+    color: black;
+    padding-left: 35px;
+}
+.plateHeading
+{
+    color: black;
+
+   margin-top: -10px;
+}
+.extreContaint
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.horizontal
+{
+    margin: 3rem;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    height: 17rem;
+    width: 13rem;
+}
+.horizontal ul p span {
+    color: rgb(31, 112, 57);
+    cursor: pointer;
+}
