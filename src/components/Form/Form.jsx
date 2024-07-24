@@ -10,10 +10,10 @@ import "./Form.css"
 
 const Form = () => {
     return (
-       
+       <div>
+      <h1 className="contactPageTitle">Contact Me</h1>
+        <div className="Border"></div>
       <div id='contact'>
-         
-          <h1 className="contactPageTitle">Contact Me</h1>
           <span className="contactDesc">Fill this below form for any work or appointment</span>
             <form action="" className="contactform">
               <input type="text" className="name" placeholder='Your Name' /><br />
@@ -34,7 +34,8 @@ const Form = () => {
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2024 Abhishek Ujale . All rights recieved </p>
             </footer>
             
-            </div>
+        </div>
+        </div>
   )
 }
 

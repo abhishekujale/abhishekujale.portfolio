@@ -1,0 +1,47 @@
+
+.pro-2{
+    background-color: rgb(81, 77, 77);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border: 1px gray solid;
+    border-radius: 10%;
+    box-shadow: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.FirstProjects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pro-2 a{
+color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.SecondProjects
+{
+    display: flex;
+    justify-content: space-around;
+flex-wrap: wrap;
+}
+.ProjectHeading
+{
+    display: flex;
+    justify-content: center;
+}
+.Border{
+    height: 1px ;
+    background-color: white;
+    margin-bottom: 20px;
+}
+a:hover {
+    text-decoration: none;
+}

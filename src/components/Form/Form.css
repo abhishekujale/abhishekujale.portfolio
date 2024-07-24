@@ -10,6 +10,7 @@
 {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 .contactDesc
 {
@@ -63,7 +64,11 @@ input, textarea
     border-radius: 5px;
     cursor: pointer;
 }
-
+.Border{
+    height: 1px ;
+    background-color: white;
+    margin-bottom: 20px;
+}
 
 .links img
 {
