@@ -23,7 +23,7 @@ const Form = () => {
               <button className="submitBtn">Submit</button>
               <div className="links">
                  <a href="https://www.facebook.com/abhishek.ujale.92" target='blank'> <img src={facebook} alt="facebook" className='link' /></a>
-                 <a href="https://www.facebook.com/abhishek.ujale.92" target='blank'> <img src={instagram} alt="instagram" className='link' /></a>
+                 <a href="https://www.instagram.com/abhishekk.ujale" target='blank'> <img src={instagram} alt="instagram" className='link' /></a>
                  <a href="https://github.com/abhishekujale" target='blank'> <img src={git} alt="gitHub" className='link' /></a>
                  <a href="https://x.com/UjaleAbhishek" target='blank'> <img src={twitter} alt="twitter" className='link' /></a>
                  <a href="https://www.linkedin.com/in/abhishek-ujale-916284257/" target='blank'> <img src={likedIn} alt="likedIn" className='link' /></a>
