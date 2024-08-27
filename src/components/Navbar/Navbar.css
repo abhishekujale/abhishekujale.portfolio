@@ -1,10 +1,8 @@
-
-
 .navbar{
     height: 5rem;
     width: 110vw;
     margin: 0 auto;
-    padding: 1rem 2rem ;
+    padding: 1rem 2rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -14,59 +12,137 @@
     margin-left: -75px;
     max-width: 75rem;
     flex-wrap: wrap;
-
+    color: white;
+    background-color: aquamarine;
 }
 
-.logo
-{
+.logo {
     object-fit: cover;
     height: 5rem;
     width: 6rem;
     border-radius: 20%;
     margin-left: 160px;
 }
-.desktopMenuListItem
-{
+
+.desktopMenuListItem {
     cursor: pointer;
     margin: 20px;
     font-size: 20px;
     color: white;
 }
-.desktopMenuListItem:hover
+#intro
 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desktopMenuListItem:hover {
     color:#55AD9B;
     text-decoration: none;
     border-bottom: 2px solid rgb(17, 88, 173);
 }
-.desktopMenuBtn
-{
+
+.desktopMenuBtn {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: none;
     font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
- cursor: pointer;
- padding: 10px;
- margin-right: -12rem;
-  padding-right: 2rem;
-  width: 11rem;
-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: -12rem;
+    padding-right: 2rem;
+    width: 11rem;
+    height: 3rem;
 }
 
-.desktopMenuImg
-{
+.desktopMenuImg {
     cursor: pointer;
     object-fit: cover;
     height: 2rem;
     width: 2rem;
-/* margin: s; */
-margin-right: 10px;
+    margin-right: 10px;
 }
-.desktopMenu
-{
+
+.desktopMenu {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Sidebar Styles */
+.sidebarToggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.sidebar {
+    background-color: aquamarine;
+
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.closeSidebar {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebarMenuListItem {
+    padding: 15px 25px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebarMenuListItem:hover {
+    background-color: #575757;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .desktopMenu, .desktopMenuBtn {
+        display: none;
+    }
+.imgeContent
+{
+    display: none;
+}
+    .sidebarToggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        color: white;
+    }
+
+    .logo {
+        margin-left: 0; /* Adjust logo margin for mobile view */
+    }
 }

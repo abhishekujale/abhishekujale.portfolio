@@ -1,41 +1,74 @@
-import React from 'react'
-import "./Navbar.css"
-import skill from "../Skills/Skills"
-import logo from "../../assets/logo.png"
-import contact from "../../assets/contact.png"
-import {Link} from 'react-scroll'
+import React, { useState } from 'react';
+import "./Navbar.css";
+import { LuMenu } from "react-icons/lu";
+import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faInfoCircle, faCogs, faProjectDiagram, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <div>
-         <nav className="navbar">
-              <img src={logo} alt="logo" className='logo'/>
-              {/* <div className="desktopMenu">
-                  <a className='desktopMenuListItem'>Home</a>
-                  <a href={skill} className='desktopMenuListItem'>About</a>
-                  <a className='desktopMenuListItem'>Skills</a>
-                 
-                  <a className='desktopMenuListItem'>Work</a>
-                  <a className='desktopMenuListItem'>Contact</a>
-          
+      <nav className="navbar">
+<div></div>
+        <div className="desktopMenu">
+          <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
+            <FontAwesomeIcon icon={faHome} /> Home
+          </Link>
+          <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
+            <FontAwesomeIcon icon={faInfoCircle} /> About
+          </Link>
+          <Link activeClass='active' to='platform' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
+            <FontAwesomeIcon icon={faCogs} /> Skills
+          </Link>
+          <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>
+            <FontAwesomeIcon icon={faProjectDiagram} /> Projects
+          </Link>
+        </div>
 
-              </div> */}
-        
-         <div className="desktopMenu">
-          <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
-                  <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
-                  <Link activeClass='active' to='platform' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Skills</Link>
-                  <Link activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Projects</Link>
-                  {/* <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Contact</Link> */}
-          
+        <div className="desktopMenuBtn">
+          <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500}>
+            <FontAwesomeIcon icon={faEnvelope} className="desktopMenuImg" />
+            <b>Contact Me</b>
+          </Link>
+        </div>
 
-              </div>
-              <div className="desktopMenuBtn">
-               <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} >   <img src={contact} alt="" className="desktopMenuImg" /><b>Contact Me</b></Link>
-              </div>
-        </nav>
-   
+        <button className="sidebarToggle" onClick={toggleSidebar}>
+          {/* <FontAwesomeIcon icon={faBars} /> Hamburger icon */}
+          {/* ||| */}
+          <LuMenu />
+          {/* <CiMenuBurger /> */}
+        </button>
+      </nav>
+
+      {/* Sidebar for mobile view */}
+      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+        <button className="closeSidebar" onClick={toggleSidebar}>
+          <FontAwesomeIcon icon={faTimes} /> {/* Close icon */}
+        </button>
+        <Link onClick={toggleSidebar} activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='sidebarMenuListItem'>
+          <FontAwesomeIcon icon={faHome} /> Home
+        </Link>
+        <Link onClick={toggleSidebar} activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className='sidebarMenuListItem'>
+          <FontAwesomeIcon icon={faInfoCircle} /> About
+        </Link>
+        <Link onClick={toggleSidebar} activeClass='active' to='platform' spy={true} smooth={true} offset={-100} duration={500} className='sidebarMenuListItem'>
+          <FontAwesomeIcon icon={faCogs} /> Skills
+        </Link>
+        <Link onClick={toggleSidebar} activeClass='active' to='projects' spy={true} smooth={true} offset={-100} duration={500} className='sidebarMenuListItem'>
+          <FontAwesomeIcon icon={faProjectDiagram} /> Projects
+        </Link>
+        <Link onClick={toggleSidebar} activeClass='active' to='contact' spy={true} smooth={true} offset={-100} duration={500} className='sidebarMenuListItem'>
+          <FontAwesomeIcon icon={faEnvelope} /> Contact
+        </Link>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

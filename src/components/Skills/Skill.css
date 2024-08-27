@@ -16,10 +16,9 @@ justify-content: center;
     display: flex;
     padding: 20px;
     background-color: rgb(112, 117, 121);
-    margin: 30px;
     border: none;
     cursor: pointer;
-
+margin-top: 30px;
     border-radius: 20px;
     width: 800px;
     height: 100px;
@@ -70,4 +69,15 @@ transition: 2s ease;
 {
     display:grid;
     flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+    .mainContainer{
+        width: 350px;
+        margin-left: -3rem;
+    }
+    .imgeCard {
+        margin-top: 10px;
+        width: 5rem;
+        height: 5rem;
+    }
 }

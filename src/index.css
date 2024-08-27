@@ -3,7 +3,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: black;
+    background-color: rgb(67, 173, 120);
     font-family: poppins;
 }
 body::-webkit-scrollbar {
