@@ -2,6 +2,10 @@ div
 {
     color: #ffffff;
 }
+#platform
+{
+    margin-top: 30px;
+}
 .platContainer
 {
     display: flex;
@@ -25,11 +29,14 @@ justify-content: center;
     margin-top: 20px;
 
 }
+.plathead{
+    font-size: 1.5rem;
+    color: black;
+}
 .border
 {
     width: 100vw;
     height: 2px;
-background: linear-gradient(#ffffff,#000);    margin-bottom: 20px;
 }
 .platContaint
 {
@@ -54,10 +61,13 @@ background: linear-gradient(#ffffff,#000);    margin-bottom: 20px;
     color: #000;
     padding: 15px;
     border-radius: 10px;
-    height: 17rem;
-    width: 13rem;
+height: auto;    width: 13rem;
 }
 .horizontal ul p span {
     color: rgb(31, 112, 57);
     cursor: pointer;
+}
+.horizontal ul{
+    margin-left: 10px;
+    margin-top: 8px;
 }

@@ -9,7 +9,7 @@ const ThirdProjects = () => {
             target='_blank'> 
             Ayurvedic Recommendation using KNN</a>
         </div>
-        <div className="pro-2">
+        {/* <div className="pro-2">
           <a href='https://github.com/abhishekujale/privportweb'
             target='_blank'> 
             Private Portfolio
@@ -20,8 +20,8 @@ const ThirdProjects = () => {
             target='_blank'> 
             Alternative Medicine Recommendation 
           </a>
-        </div>
-        <div className="pro-2">
+        </div> */}
+        {/* <div className="pro-2">
           <a href='https://github.com/abhishekujale/Virtual-try-on'
             target='_blank'> 
             Virtual Try On
@@ -38,7 +38,7 @@ const ThirdProjects = () => {
             target='_blank'> 
            Cafe Cofee Day
           </a>
-        </div>
+        </div> */}
         
 
        </div>

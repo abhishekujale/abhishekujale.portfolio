@@ -1,83 +1,138 @@
-
-.Special
-{
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: poppins;
+/* General Styling for Skills Section */
+.Special {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0;
 }
-.heading h1{
+
+.heading h1 {
     display: flex;
     align-items: center;
-justify-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease;
 }
-.card{
+
+.heading p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    animation: fadeInDown 1.5s ease;
+}
+
+/* Card Styling */
+.card {
     display: flex;
+    align-items: center;
     padding: 20px;
     background-color: rgb(112, 117, 121);
     border: none;
     cursor: pointer;
-margin-top: 30px;
+    margin: 20px auto;
     border-radius: 20px;
-    width: 800px;
-    height: 100px;
+    width: 300px;
+    height: 130px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
 }
-.cardMainHeading{
+
+.cardMainHeading {
     margin-left: 25px;
+    flex: 1;
 }
-.imgeCard
-{
+
+.imgeCard {
     width: 7rem;
     height: 7rem;
     border-radius: 20px;
     z-index: 45;
     margin-top: -10px;
+    transition: transform 0.5s ease;
 }
 
-.cardPara
-{
+.cardPara {
     display: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
-.card:hover .cardPara
-{    transition: 2s ease;
-    display: block;
-}
-.card h3
-{
-    display: flex;
-    position:sticky;
-    align-items: center;
-    justify-content: center;
-}
-.card:hover  .imgeCard{
-display: none;
-transition: 2s ease;
 
+.card:hover {
+    background-color: #3a3b3a;
+    color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.card:hover .cardHeading
-{
+
+.card:hover .imgeCard {
+    transform: scale(1.2);
+}
+
+.card:hover .cardPara {
+    display: block;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.card:hover .cardHeading {
     display: block;
 }
-.card:hover
-{
-    background-color:#3a3b3a;
-    color: #ffffff;
-    transition: 0.8s ease;
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.Cards
-{
-    display:grid;
-    flex-direction: row-reverse;
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .mainContainer{
+    .mainContainer {
         width: 350px;
         margin-left: -3rem;
     }
+
     .imgeCard {
         margin-top: 10px;
         width: 5rem;
         height: 5rem;
+    }
+
+    .card {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
     }
 }

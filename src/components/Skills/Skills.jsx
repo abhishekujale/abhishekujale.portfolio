@@ -61,7 +61,7 @@ const Skills = () => {
               
           </div>
 
-              <div className="card">
+              {/* <div className="card">
             <img src={appDesign} alt="" className="imgeCard" />
             <div className="cardMainHeading">
                 <h3 className="cardHeading"> App Dev</h3>
@@ -69,7 +69,7 @@ const Skills = () => {
                     This react portfolio website can help you to showcase your work experience on online website. 
               </p>
               </div>
-              </div>
+              </div> */}
           </div>
       </div>
       </div>

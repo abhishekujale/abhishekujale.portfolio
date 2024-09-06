@@ -9,7 +9,7 @@ import Form from './components/Form/Form'
 const App = () => {
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar ></Navbar>
       <Intro></Intro>
       {/* <Skills></Skills> */}
       <Skills></Skills>

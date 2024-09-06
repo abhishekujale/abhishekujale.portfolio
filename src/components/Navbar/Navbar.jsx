@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className='TotalBar'>
       <nav className="navbar">
 <div></div>
         <div className="desktopMenu">

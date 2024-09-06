@@ -23,12 +23,12 @@ const Platform = () => {
                 <p>ExpressJs</p>
                 <p>NodeJS</p>
                 <p>NextJS</p>
-                <p>Flutter</p>
+                {/* <p>Flutter</p> */}
                 <p>Tailwind-CSS</p>
                 <p>BootStrap</p>
-               <p>Django</p>
+               {/* <p>Django</p> */}
                <p>Flask</p>
-               <p>ReactNative</p>
+               {/* <p>ReactNative</p> */}
                <p>Streamlit</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ const Platform = () => {
                 <p>OpenCv</p>
                 <p>Keras</p>
                 <p>Pygame</p>
-                <p>Beautiful Soup</p>
+                {/* <p>Beautiful Soup</p> */}
             </div>
           </div>
           <div className="platcards">
@@ -55,8 +55,8 @@ const Platform = () => {
               <div className="platContaint">
                 <p>Docker</p>
                 <p>AWS</p>
-            <p>KuberNetis</p>
-            <p>Azure</p>
+            {/* <p>KuberNetis</p> */}
+            {/* <p>Azure</p> */}
                 <p>Postman</p>
                 <p>Mongo</p>
                 <p>GitHub</p>
@@ -73,7 +73,7 @@ const Platform = () => {
                 <p>Javascript</p>
                 <p>C++</p>
                 <p>Python</p>
-            <p>Dart</p>
+            {/* <p>Dart</p> */}
             <p>Typescript</p>
             <p>SQL</p>
                 <p>Java</p>
@@ -101,7 +101,7 @@ const Platform = () => {
         </div><div className="horizontal">
            <h3>Voluteering</h3>
           <ul>
-          <li><p>Technical Co-head <span><b>Acses KITCoEK</b></span></p></li>
+          <li><p>Technical Head <span><b> Acses KITCoEK</b></span></p></li>
           <li><p>Technical member at E-cell KITCoEk</p></li>
            <li> <p> Team member at ISTE </p></li>
           </ul>
